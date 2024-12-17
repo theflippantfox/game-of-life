@@ -1,5 +1,8 @@
 dev:
 	go run main.go
 
-build:
-	go -o build/game-of-life main.go
+build:clean
+	go -o bin/game_of_life main.go
+
+clean:
+       rm -rf bin
